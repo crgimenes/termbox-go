@@ -1,9 +1,6 @@
-[![Go Reference](https://pkg.go.dev/badge/github.com/nsf/termbox-go.svg)](https://pkg.go.dev/github.com/nsf/termbox-go)
-![Build](https://github.com/nsf/termbox-go/actions/workflows/test-ubuntu.yml/badge.svg)
-
 ## IMPORTANT
 
-This library is somewhat not maintained anymore. But I'm glad that it did what I wanted the most. It moved people away from "ncurses" mindset and these days we see both re-implementations of termbox API in various languages and even possibly better libs with similar API design. If you're looking for a Go lib that provides terminal-based user interface facilities, I've heard that [gdamore/tcell](https://github.com/gdamore/tcell) is good (never used it myself). Also for more complicated interfaces and/or computer games I recommend you to consider using HTML-based UI. Having said that, termbox still somewhat works. In fact I'm writing this line of text right now in godit (which is a text editor written using termbox-go). So, be aware. Good luck and have a nice day.
+This is a heavily modified version of the [termbox-go](https://github.com/nsf/termbox-go) package that is no longer being maintained. This version does not intend to follow the style of the original termbox or even continue to maintain the package.
 
 ## Termbox
 Termbox is a library that provides a minimalistic API which allows the programmer to write text-based user interfaces. The library is crossplatform and has both terminal-based implementations on \*nix operating systems and a winapi console based implementation for windows operating systems. The basic idea is an abstraction of the greatest common subset of features available on all major terminals and other terminal-like APIs in a minimalistic fashion. Small API means it is easy to implement, test, maintain and learn it, that's what makes the termbox a distinct library in its area.
