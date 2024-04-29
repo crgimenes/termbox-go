@@ -76,15 +76,15 @@ func Init() error {
 	}
 
 	tios := orig_tios
-	tios.Iflag &^= syscall_IGNBRK | syscall_BRKINT | syscall_PARMRK |
-		syscall_ISTRIP | syscall_INLCR | syscall_IGNCR |
-		syscall_ICRNL | syscall_IXON
-	tios.Lflag &^= syscall_ECHO | syscall_ECHONL | syscall_ICANON |
-		syscall_ISIG | syscall_IEXTEN
-	tios.Cflag &^= syscall_CSIZE | syscall_PARENB
-	tios.Cflag |= syscall_CS8
-	tios.Cc[syscall_VMIN] = 1
-	tios.Cc[syscall_VTIME] = 0
+	tios.Iflag &^= syscall.IGNBRK | syscall.BRKINT | syscall.PARMRK |
+		syscall.ISTRIP | syscall.INLCR | syscall.IGNCR |
+		syscall.ICRNL | syscall.IXON
+	tios.Lflag &^= syscall.ECHO | syscall.ECHONL | syscall.ICANON |
+		syscall.ISIG | syscall.IEXTEN
+	tios.Cflag &^= syscall.CSIZE | syscall.PARENB
+	tios.Cflag |= syscall.CS8
+	tios.Cc[syscall.VMIN] = 1
+	tios.Cc[syscall.VTIME] = 0
 
 	err = tcsetattr(outfd, &tios)
 	if err != nil {
