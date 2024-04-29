@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/mattn/go-runewidth"
-	"github.com/nsf/termbox-go"
+	"termbox-go"
 )
 
 type key struct {

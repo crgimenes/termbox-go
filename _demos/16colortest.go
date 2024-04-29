@@ -1,6 +1,6 @@
 package main
 
-import "github.com/nsf/termbox-go"
+import "termbox-go"
 import "fmt"
 
 // This program can demonstrate the 16 basic colors available
